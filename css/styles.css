@@ -18,13 +18,39 @@ img {
 p {
     font-size: 14px;
 }
+div {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+div a{
+    display: inline-block;
+}
+div p {
+    display: none;
+    text-align: none;
+    margin: none;
+}
+
 
 @media  screen and (min-width:700px) {
     p {
         font-size: 12px;
         max-width: 650px;
+        text-align: center;
         margin: 0 auto;
     } 
+    div p{
+        display: inline-block;
+    }
+}
+@media  screen and (min-width:1024px) {
+    p {
+        max-width: 1000px;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 @media  screen and (max-width:700px) {
