@@ -2,3 +2,23 @@ html, body{
     margin: 0;
     padding: 0;
 }
+.desktop {
+    width: 960px;
+    height: 400px;
+    display: block;
+}
+.mobile {
+    width: 100%;
+    height: 300px;
+    display: none;
+}
+
+
+@media  screen and (max-width:701px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
