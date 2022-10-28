@@ -1,4 +1,106 @@
+/* 1. Header Styles */
+/* 2. Navigation Styles */
+/* 3. Heading Styles */
+/* 4. Body Styles */
+/* 5. Footer Styles */
+/* 6. Media Queries */
+
+
+
+/* 1. Header Styles */
+/* 2. Navigation Styles */
+#mobile-hamburger{
+    position: absolute;
+    left: 85%;
+    top: 1%;
+}
+nav {
+    display: none;
+}
+#mobile-hamburger:active~nav{
+    display: block;
+}
+li {
+    text-align: center;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+li>a {
+    color: black;
+    font-size: 5vw;
+}
+#backToTop {
+    position: absolute;
+    left: 80%;
+}
+/* 3. Heading Styles */
+h3{
+    font-size: 5vw;
+}
+h3 img{
+   width: 10% 
+}
+#gameMD h3 img{
+    margin-top: -5%;
+    width: 33% 
+ }
+/* 4. Body Styles */
+
 html, body{
     margin: 0;
     padding: 0;
+}
+/* 5. Footer Styles */
+
+footer{
+    text-align: center;
+    
+}
+/* 6. Media Queries */
+
+/* Desktop View */
+@media screen and (min-width: 700px) { 
+    #mobile-hamburger {
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-left: 5%;
+        
+    }
+    li>a {
+        font-size: 1.75vw;
+    }
+    .desktop-wrapper{
+        margin: 5% 1% 0 1%;
+    }
+    h3 {
+        font-size: 2vw;
+    }
+    
+    h3 img{
+        margin-top: 1%;
+        width: 12.5%;
+    }
+    #gameMD h3 img {
+        width: 18%
+    }
+    article p{
+        margin-top: 5%;
+        font-size: 1.25vw
+    }
+    #backToTop{
+        display: none;
+    }
+
+    footer{
+        background-color: red;
+        font-size: 1.5vw;
+        padding: 20px
+    }
 }
