@@ -1,26 +1,94 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<!-- Justin Brierley
+     2022-10-28
+     Assignment 2 -->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="YOURDESCRIPTIONHERE">
   <meta name="author" content="YOURNAMEHERE" />
-  <title>YOURTITLEHERE</title>
+  <title>Local Used Stores</title>
+  <link rel="stylesheet" href="css/grid.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  
 </head>
 
 <body>
   <header>
-    <!-- Nav goes here -->
+    <button id="mobile-hamburger">
+      <span class="material-icons">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M22 13C22 14.11 21.11 15 20 15H4C2.9 15 2 14.11 2 13S2.9 11 4 11H13L15.5 13L18 11H20C21.11 11 22 11.9 22 13M12 3C3 3 3 9 3 9H21C21 9 21 3 12 3M3 18C3 19.66 4.34 21 6 21H18C19.66 21 21 19.66 21 18V17H3V18Z" />
+          </svg>
+        </button>
+    <nav>
+      <ul>
+        <li><a href="#gameMD">Game MD</a></li>
+        <li><a href="#gameCycle">Game Cycle</a></li>
+        <li><a href="#liquidationCenter">Liquidation Center</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <!-- Content goes here -->
+    <div class="desktop-wrapper">
+      <div class="row">
+        <div class="col-12">
+          <article>
+            <h2>Local Business Website Ratings</h2>
+          </article>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4" id="gameMD">
+          <article>
+            <h3>
+              <img id="gameMDLogo" src="img/gamemdlogo.svg">
+            </h3>
+            <p>The Game MD is a locally owned and operated video game store. They buy and
+              sell used video games, game systems, and accessories. If you are looking for 
+              best deals on retro games, Game MD is the store for you! The Game MD also carries
+              new releases and the latest generation of consoles, while offering repairs on your
+              consoles at an affordable price. 
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d23605.21251085467!2d-82.987798737675!3d42.30729971817254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d42.3069937!2d-82.9824112!4m5!1s0x883b2b1bcabba053%3A0x82ff0199529d44a7!2sgame%20md%20windsor!3m2!1d42.3095521!2d-82.95857079999999!5e0!3m2!1sen!2sca!4v1666985459002!5m2!1sen!2sca" width="50%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </article>
+        </div>
+        <div class="col-4" id="gameCycle">
+          <article>
+            <h3>Game Cycle <span class="icon">
+              <img src="img/gamecyclelogo.svg"></h3>
+            <p>Game Cycle is your one stop shop when it comes to used media! You wanna watch
+              that movie you saw with that one girl like 15 years ago? Looking for 
+              a childhood favourite video game? Check out Game Cycle, 
+              there's a great chance you will find it for a very reasonable price. Looking to clear
+              some clutter? Take your old CD's, video games and movies to Game Cycle and make some
+              money. 
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d11802.802525906953!2d-82.98382851204359!3d42.3062528670467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d42.3069937!2d-82.9824112!4m5!1s0x883b2b1226e47647%3A0x226841c962b18546!2sGame%20Cycle%202%2C%204681%20Tecumseh%20Rd%20E%2C%20Windsor%2C%20ON%20N8W%201K8!3m2!1d42.3071975!2d-82.96805839999999!5e0!3m2!1sen!2sca!4v1666985606124!5m2!1sen!2sca" width="50%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </article>
+        </div>
+        <div class="col-4" id="liquidationCenter">
+          <article>
+            <h3>Liquidation Center <span class="icon">
+              <img src="img/liquidationlogo.svg"></h3>
+            <p></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d23606.69996853923!2d-83.01149933768306!3d42.30333276818993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d42.3069937!2d-82.9824112!4m5!1s0x883b2c89c6a3aaff%3A0x75719b5d87bd9471!2sLiquidation%20Center%20-%20Sales%20Event%2C%201165%20Tecumseh%20Rd%20E%2C%20Windsor%2C%20ON%20N8W%201B5!3m2!1d42.2996717!2d-83.0075912!5e0!3m2!1sen!2sca!4v1666985704512!5m2!1sen!2sca" width="50%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </article>
+        </div>
+      </div>
+    </div>
+    <a id="backToTop" href="#gameMD">Back to Top</a>
   </main>
+  
   <footer>
-    <!-- Github link goes here -->
+    <a href="https://github.com/paradingwolves/WEB301_Assignments/tree/Assignment2">Assignment 2 Repo</a>
   </footer>
+  <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
-
 </html>
