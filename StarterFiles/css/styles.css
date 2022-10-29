@@ -5,9 +5,13 @@
 /* 5. Footer Styles */
 /* 6. Media Queries */
 
+* {
+    font-family: 'Roboto Mono', monospace;
+}
 
 
 /* 1. Header Styles */
+
 /* 2. Navigation Styles */
 #mobile-hamburger{
     position: absolute;
@@ -17,8 +21,11 @@
 nav {
     display: none;
 }
-#mobile-hamburger:active~nav{
-    display: block;
+nav ul li{
+    margin-left: -10%;
+}
+nav ul li:hover{
+    background-color: grey;
 }
 li {
     text-align: center;
@@ -32,15 +39,20 @@ li>a {
     font-size: 5vw;
 }
 #backToTop {
+    font-size: 3.5vw;
     position: absolute;
-    left: 80%;
+    left: 70%;
 }
 /* 3. Heading Styles */
-h3{
+h2{
+    margin-top:7%;
     font-size: 5vw;
 }
+h3{
+    font-size: 5.5vw;
+}
 h3 img{
-   width: 10% 
+   width: 12% 
 }
 #gameMD h3 img{
     margin-top: -5%;
@@ -52,16 +64,29 @@ html, body{
     margin: 0;
     padding: 0;
 }
+.row:first-of-type {
+    border: none
+}
+div p:last-of-type{
+    text-align: center;
+}
 /* 5. Footer Styles */
 
 footer{
     text-align: center;
+    margin-top: 10%;
+    background-color: red;
+    padding: 20px
     
 }
 /* 6. Media Queries */
 
 /* Desktop View */
 @media screen and (min-width: 700px) { 
+    header {
+        background-color: red;
+        padding: 5px
+    }
     #mobile-hamburger {
         display: none;
     }
@@ -77,7 +102,20 @@ footer{
         font-size: 1.75vw;
     }
     .desktop-wrapper{
-        margin: 5% 1% 0 1%;
+        margin: 0% 1% 0 1%;
+    }
+    article p {
+        width: 75%;
+        text-indent: 1em;
+        margin: 0 auto;
+        font-size: 1.25vw
+    }
+    article p:nth-of-type(2) {
+        margin-top: 2%;
+    }
+
+    h2 {
+        font-size: 3vw;
     }
     h3 {
         font-size: 2vw;
@@ -90,17 +128,15 @@ footer{
     #gameMD h3 img {
         width: 18%
     }
-    article p{
-        margin-top: 5%;
-        font-size: 1.25vw
+    .row {
+        border-top: none;
     }
     #backToTop{
         display: none;
     }
 
-    footer{
-        background-color: red;
+    footer{  
         font-size: 1.5vw;
-        padding: 20px
     }
 }
+  
