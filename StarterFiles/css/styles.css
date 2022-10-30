@@ -96,7 +96,7 @@ footer a {
 /* 6. Media Queries */
 
 /* Desktop View */
-@media screen and (min-width: 393px) { 
+@media screen and (min-width: 397px) { /* lowest I could go to get to work on my phone */
     header {
         background-color: red;
         padding: 5px
