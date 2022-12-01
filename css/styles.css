@@ -1,29 +1,75 @@
-html, body{
-    margin: 0;
-    padding: 0;
-}
+/* 1. Header Styles */
+/* 2. Navgation Styles */
+/* 3. Heading Styles */
+/* 4. Body Styles */
+/* 5. Footer Styles */
+/* 6. Media Queries */
 
-#storesAccordion {
-    margin-top: 2%;
-}
-.card {
-    margin: 3% 0 0 3%;
-}
+
+
+
+/* 1. Header Styles */
 span {
-    margin-left: 5%
+    margin-left: 5%;
+}
+#gameMDSpan {
+    margin: 0 0 0 1%;
 }
 .logo {
     width: 25%;
 }
 #gameCycleLogo1 {
-    width: 15%;
+    width: 20%;
 }
 #headingOne button {
     font-size: .62em; 
 }
 
 
+/* 2. Navgation Styles */
+.nav-link {
+    text-align: center;
+}
+
+/* 3. Heading Styles */
+
+
+/* 4. Body Styles */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#accordionstoresAccordion {
+    margin-bottom: 2%;
+}
+.container-fluid>a {
+    margin-left: 1%;
+}
+#storesAccordion {
+    margin-top: 2%;
+}
+div[class="card mb-3 col-10"] {
+    margin-top: 5%;
+} 
+/* 5. Footer Styles */
 footer {
     padding: 20px;
     text-align: center;
 }
+footer a {
+    text-decoration: none;
+    color: black
+}
+
+/* 6. Media Queries */
+
+
+
+   
+
+
+
+
+
+

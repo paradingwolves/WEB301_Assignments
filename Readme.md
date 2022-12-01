@@ -20,4 +20,7 @@ Work Log:
 2022-12-01  2:30PM
 -------------------
 - now using ajax to retrieve content --> cleaner index code
-- 
+- added accordion to index
+- added card view for 2/3 sites
+- fixed my styles.css file to be more organized
+- got rid of the search bar and button in header
