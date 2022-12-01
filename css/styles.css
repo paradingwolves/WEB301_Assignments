@@ -3,12 +3,23 @@ html, body{
     padding: 0;
 }
 
+#storesAccordion {
+    margin-top: 2%;
+}
 .card {
     margin: 3% 0 0 3%;
 }
-
+span {
+    margin-left: 5%
+}
 .logo {
-    width: 25%
+    width: 25%;
+}
+#gameCycleLogo1 {
+    width: 15%;
+}
+#headingOne button {
+    font-size: .62em; 
 }
 
 

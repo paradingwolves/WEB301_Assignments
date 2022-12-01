@@ -15,4 +15,9 @@ Work Log:
 - using the 'solar' bootswatch theme
 - added the nav bar to the index page --> each link goes to a website 
 - added my github link to footer
+
+
+2022-12-01  2:30PM
+-------------------
+- now using ajax to retrieve content --> cleaner index code
 - 
