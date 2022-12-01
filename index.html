@@ -46,27 +46,88 @@
     </nav>
   </header>
   <main>
-
-
-    <div class="card mb-3 col-4">
+<div class="row">
+  <div class="col-2"></div>
+  <div class="accordion col-8" id="storesAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            The Game MD <span><img class="logo" src="imgs/gamemdlogo.svg" alt="Game MD Logo"/></span>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#storesAccordion" style="">
+          <div id="gameMD2" class="accordion-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button id="gameCycle" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+            Game Cycle <span><img class="logo" src="imgs/gamecyclelogo.svg" alt="Game Cycle Logo"/></span>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#storesAccordion" style="">
+          <div id="gameCycle2" class="accordion-body">
+            
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button id="liquidationCenter" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+            Liquidation Center <span><img class="logo" src="imgs/liquidationlogo.svg" alt="Liquidation Center Logo"/></span>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#storesAccordion" style="">
+          <div id="liquidationCenter2" class="accordion-body">
+            
+          </div>
+        </div>
+      </div>
+</div>
+    
+   <!--  <div class="card mb-3 col-3">
       <h3 class="card-header">The Game MD <span><img class="logo" src="imgs/gamemdlogo.svg" alt="Game MD Logo"/></span></h3>
       <div class="card-body">
         <h5 class="card-title">The Game MD Website</h5>
-        <h5 class="card-subtitle text-muted">Website Review</h5>
+        <h5 class="card-subtitle text-muted">Website Analysis</h5>
       </div>
-      <!-- <img src="imgs/gameMD.jpg" alt="Game MD Logo"/> -->
       <div class="card-body">
         <p class="card-text"><strong>The Game MD</strong> implemented a <strong>grid layout</strong> for their website. 
-          This website uses<strong>responsive</strong> design. There is no content 
+          This website uses <strong>responsive</strong> design. There is no content 
           that is not visible from one view to another, only the way the content is displayed. The 
           background-image used on the landing screen has a max width, and is no longer the background-image
           at the 770px breakpoint. This image will have a 100% width at the 441px breakpoint. It is at this same
           770px breakpoint that we see the site go from multiple columns to a single column layout.</p>
       </div>
+      <div class="card-body">
+        <h5 class="card-subtitle text-muted">Desktop View</h5>
+        <p class="card-text"> I like how they implemented a multi-column layout without making the content overwhelming
+          to read. There is no more than 3 columns at a time. 
+        </p>
+        <p class="card-text"> I am not a fan of the small font on the navigation links. These links are very small and 
+          can be difficult to read for some users. I can also live without background-images where
+          I have to scroll to see the content I'm looking for.
+        </p>
+      </div>
+      <div class="card-body">
+        <h5 class="card-subtitle text-muted">Mobile View(s)</h5>
+        <p class="card-text">
+          I like the single column layout on this mobile view. Reading the services provided is much easier
+          to follow when viewing on mobile. The navigation is much more accessible on the mobile view
+          than the desktop view.
+        </p>
+        <p class="card-text"> 
+          I don't like the image on the landing screen 
+          as I find it is kind of janky when you visit the site on a tablet. At some resoltions the image
+          is scrollable but the focal point is never visible, making it obtrusive for no reason. 
+        </p>
+      </div>
       <div class="card-footer text-muted">
         Rating: 6.5/10
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -74,7 +135,7 @@
   <footer>
     <a href="https://github.com/paradingwolves/WEB301_Assignments/tree/Assignment3">Assignment 3 Repo</a>
   </footer>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 

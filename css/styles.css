@@ -3,6 +3,10 @@ html, body{
     padding: 0;
 }
 
+.card {
+    margin: 3% 0 0 3%;
+}
+
 .logo {
     width: 25%
 }
