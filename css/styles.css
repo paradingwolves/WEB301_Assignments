@@ -36,9 +36,11 @@ span {
 
 /* 4. Body Styles */
 html, body{
-    max-width: 381px;
     margin: 0;
     padding: 0;
+}
+body {
+    max-width: 381px;
 }
 
 .container {
@@ -111,6 +113,64 @@ footer {
 
 /* 6. Media Queries */
 
+@media only screen and (min-width: 1260px){
+
+    /* 1. Header Styles */
+    header, footer {
+        margin-left: 0%
+    }
+    /* 2. Navgation Styles */
+
+    /* 3. Heading Styles */
+
+    /* 4. Body Styles */
+    div[class*="col-"] {
+        width: unset;
+    } 
+    html {
+        max-width: 99%;
+    }
+    body{
+        max-width: 100%;
+    }
+    .prev, .next {
+        margin: 0;
+    }
+    .container {
+        margin: 0 auto;
+    }
+    .slider-inner {
+         position: relative;
+         float: left;
+         padding: 3px;
+         
+     }
+     .slider-inner img {
+         margin: 10% 0 0 75%;
+         width: 100%;
+     }
+     .next, .prev {
+         margin-top: 10%;
+         
+     }
+     .prev {
+         margin-left: 20%;
+         z-index: 9000;
+     }
+     .next {
+         right: 15%;
+         z-index: 9000;
+     }
+     div[class="card mb-3 col-10"] {
+        margin-top: 3%;
+    } 
+}
+
+
+
+    /* 5. Footer Styles */
+    
+    
 
 
    

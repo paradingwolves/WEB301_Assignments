@@ -56,3 +56,5 @@ Work Log:
 -------------------
 2022-12-02  42:00PM
 -------------------
+- unset col- widths for desktop viewers to give me more versatility
+- started basic desktop view design
