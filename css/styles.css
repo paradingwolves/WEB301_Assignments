@@ -40,6 +40,41 @@ html, body{
     padding: 0;
 }
 
+.container {
+    overflow:auto;
+    margin: 0 auto;
+}
+.slider-inner {
+   /*  width: 75%; */
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    
+}
+.slider-inner img {
+    display: none;
+    margin: 5% 0 0 2%;
+    width: 100%;
+    float: left;
+}
+.slider-inner img.active {
+    display: inline-block;
+    border: 3px solid black;
+}
+.next, .prev {
+    float: left;
+    margin-top: 25%;
+    z-index: 9000;
+}
+.prev {
+    position: relative;
+    margin-left: 1.5%;
+}
+.next {
+    position: relative;
+    margin-left: 1.5%;
+}
 #accordionstoresAccordion {
     margin-bottom: 2%;
 }
@@ -52,6 +87,12 @@ html, body{
 div[class="card mb-3 col-10"] {
     margin-top: 5%;
 } 
+#behaveLC {
+    width : 18%
+}
+#behaveLC2 {
+    font-size: 1.15em; 
+}
 /* 5. Footer Styles */
 footer {
     padding: 20px;

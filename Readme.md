@@ -3,8 +3,12 @@ Use [this link](https://www.webmobilefirst.com/en/devices/) to find your mobile 
 Phone:  Google Pixel 5
 Resolution: 
 
+Image References: 
+    - gameMD.jpg: http://windsorite.ca/wp-content/uploads/2013/08/IMG_1147-640x480.jpg
+   
+    - liquidationCenter.jpg: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fliquidationcenterca%2Fvideos%2Fliquidation-center-outlet-store-windsor-crossing-outlet-mall%2F2648765125435901%2F&psig=AOvVaw19FkEQS9aZ_leOToPF4RsC&ust=1670029081195000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCksKPd2fsCFQAAAAAdAAAAABAI
 
-
+    - 
 
 Work Log: 
 
@@ -24,3 +28,10 @@ Work Log:
 - added card view for 2/3 sites
 - fixed my styles.css file to be more organized
 - got rid of the search bar and button in header
+
+
+2022-12-02  1:30PM
+-------------------
+- added carousel at the top of the page
+- fixed issue of carousel having images disappear ->buttons werent nested properly
+- now have carousel, accordion, card components 
