@@ -54,7 +54,12 @@ Work Log:
 - fixed the way the carousel looked
 
 -------------------
-2022-12-02  42:00PM
+2022-12-02  4:00PM
 -------------------
 - unset col- widths for desktop viewers to give me more versatility
 - started basic desktop view design
+
+-------------------
+2022-12-03  12:00AM
+-------------------
+- fixed inconsistent styling issue in carousel (worked as expected on every tested browser except firefox)
