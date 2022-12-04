@@ -63,3 +63,10 @@ Work Log:
 2022-12-03  12:00AM
 -------------------
 - fixed inconsistent styling issue in carousel (worked as expected on every tested browser except firefox)
+
+-------------------
+2022-12-03  7:50PM
+-------------------
+- fixed horizontal scroll issue
+- fixed my col- classes to properly use bootstrap grid, was doing backwards before
+- back to top button now in jquery

@@ -46,6 +46,10 @@ $(document).ready(function() {
         }   
         xhr.send();
     });
+
+    $("#toTop").click(function () {
+        $("html, body").animate({scrollTop: 0}, 0);
+     });
    
     
 }); 

@@ -1,234 +1,242 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Used Video Game Stores">
-  <meta name="author" content="Justin Brierley" />
-  <title>Used Video Game Stores</title>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/bootstrap(1).css" />
-
-</head>
-<body>
-  <header id="top">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary col-12">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Used Game Stores</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="http://gamecycle.ca/">Game Cycle</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://thegamemd.com/">The Game MD</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://www.liquidationcenter.ca/">The Liquidation Center</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="row">
-      <div class="container">
-        <div class="slider-outer" class="col-12">
-          <button class="bg-primary prev">Prev</button>
-          <div class="slider-inner "> 
-            <img src="imgs/gameCycle.jpg" alt="gameCycle" id="test" class="active"/>
-            <img src="imgs/gameMD.jpg" alt="gameMD"  />
-            <img src="imgs/liquidationCenter.jpg" alt="Liquidation Center" id="LC"/>
-          </div>
-          <button class="bg-primary next">Next</button>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="accordion col-10" id="storesAccordion">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Game<span id='gameMDSpan'>MD</span><span><img id="gameCycleLogo1" class="logo" src="imgs/gamemdlogo.svg" alt="Game MD Logo"/></span>
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#storesAccordion" style="">
-            <div id="gameMD2" class="accordion-body">
-            
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button id="gameCycle" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Game Cycle <span><img class="logo" src="imgs/gamecyclelogo.svg" alt="Game Cycle Logo"/></span>
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#storesAccordion" style="">
-            <div id="gameCycle2" class="accordion-body">
-            
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button id="liquidationCenter" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Liquidation Center <span><img class="logo" src="imgs/liquidationlogo.svg" alt="Liquidation Center Logo"/></span>
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#storesAccordion" style="">
-            <div id="liquidationCenter2" class="accordion-body">
-          
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Used Video Game Stores">
+    <meta name="author" content="Justin Brierley" />
+    <title>Used Video Game Stores</title>
     
-
-
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="card mb-3 col-10">
-        <h3 class="card-header">The Game MD <span><img class="logo" src="imgs/gamemdlogo.svg" alt="Game MD Logo"/></span></h3>
-        <div class="card-body">
-          <h5 class="card-title text-light">The Game MD Website</h5>
-          <h5 class="card-subtitle text-muted">Website Analysis</h5>
-        </div>
-        <div class="card-body">
-          <h5 class="card-subtitle text-light">Desktop View</h5>
-          <p class="card-text"> I like how they implemented a multi-column layout without making the content overwhelming
-            to read. There is no more than 3 columns at a time. 
-          </p>
-          <p class="card-text"> I am not a fan of the small font on the navigation links. These links are very small and 
-            can be difficult to read for some users. I can also live without background-images where
-            I have to scroll to see the content I'm looking for.
-          </p>
-        </div>
-        <div class="card-body">
-          <h5 class="card-subtitle text-light">Mobile View(s)</h5>
-          <p class="card-text">
-            I like the single column layout on this mobile view. Reading the services provided is much easier
-            to follow when viewing on mobile. The navigation is much more accessible on the mobile view
-            than the desktop view.
-          </p>
-          <p class="card-text"> 
-            I don't like the image on the landing screen 
-            as I find it is kind of janky when you visit the site on a tablet. At some resoltions the image
-            is scrollable but the focal point is never visible, making it obtrusive for no reason. 
-          </p>
-        </div>
-        <div class="card-footer text-light">
-          Rating: <span class="text-muted">6.5/10</span>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-1"></div>
-    <div class="card mb-3 col-10">
-      <h3 class="card-header">Game Cycle <span><img class="logo" src="imgs/gamecyclelogo.svg" alt="Game Cycle Logo"/></span></h3>
-      <div class="card-body">
-        <h5 class="card-title text-light">Game Cycle Website</h5>
-        <h5 class="card-subtitle text-muted">Website Analysis</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-subtitle text-light">Desktop View</h5>
-        <p class="card-text"> I like the simplicity of the design. Keeping to a 3 column maximum throughout the site. There is 
-          a reasonable amount padding around text, and the pictures and text don't take away from each other. 
-        </p>
-        <p class="card-text">I do no like how hard it is to find the navigation links at the top of this page. Having white text 
-          and a transparent background colour makes the navigation difficult to read.
-        </p>
-      </div>
-      <div class="card-body">
-        <h5 class="card-subtitle text-light">Mobile View(s)</h5>
-        <p class="card-text">
-          The only thing I can say I'm a fan of on this mobile view is the navigation is always easily visible,
-                as opposed to the Desktop view.
-        </p>
-        <p class="card-text"> 
-          The 'Learn More' button is the colour as the its background image, making it very hard to 
-                spot on the mobile view. The header at the top of the page is also in plain white text while
-                there is a slideshow of images as its background. I find this very hard to read, and other
-                users will too. 
-        </p>
-      </div>
-      <div class="card-footer text-light">
-        Rating: <span class="text-muted">7.25/10</span>
-      </div>
-    </div>
-    </div>
+    <link rel="stylesheet" href="css/bootstrap(1).css" />
+    <link rel="stylesheet" href="css/styles.css" />
     
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="card mb-3 col-10">
-        <h3 id="behaveLC2" class="card-header">Liquidation Center<span><img id="behaveLC" class="logo" src="imgs/liquidationlogo.svg" alt="Liquidation Center Logo"/></span></h3>
-        <div class="card-body">
-          <h5 class="card-title text-light">Lquidation Center Website</h5>
-          <h5 class="card-subtitle text-muted">Website Analysis</h5>
-        </div>
-        <div class="card-body">
-          <h5 class="card-subtitle text-light">Desktop View</h5>
-          <p class="card-text"> The desktop view has more of an e-commerce feel to it which I really enjoy. It was very easy 
-            to navigate the different types of items, as well as the items added to my cart.
-          </p>
-          <p class="card-text"> I don't like
-            how the navigation switches from the left to the right side depending on what page you are on.
-            The account settings is also very difficult to find, and many desktop viewers may not know it is 
-            there. 
-          </p>
-        </div>
-        <div class="card-body">
-          <h5 class="card-subtitle text-light">Mobile View(s)</h5>
-          <p class="card-text">
-            The mobile view sacrifices some content on the mobile view (e.g. items for sale on the homepage).
-              I like how the account settings is more clearly visible with its own icon in the navigation. 
-          </p>
-          <p class="card-text"> 
-            The
-              hamburger menu is essentially useless on the mobile view as there are no revealed links or anything
-              to guide you. Just a search bar. I think this is better accomplished with the other present search bar
-              that has a select list alongside it. 
-          </p>
-        </div>
-        <div class="card-footer text-light">
-          Rating: <span class="text-muted">8.13/10</span>
-        </div>
-      </div>
-    </div>
-    </div>
-      
-    <div id="toTop1" class="row">
-      <div class="col-5"></div>
-      <button id="toTop" type="button" class="btn btn-primary col-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Tooltip on top"><a href="#Top">Top</a></button>
-    </div>
-  </main>
-  <div class="row">
-    <footer class="col-12 bg-primary">
-      <a href="https://github.com/paradingwolves/WEB301_Assignments/tree/Assignment3">Assignment 3 Repo</a>
-    </footer>
-  </div>
+    
+  </head>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/carousel.js"></script>
-</body>
+    <div class="row">
+     <!--  <div class="col-1"></div> -->
+      <header id="top" class="col-md-12">   
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Used Game Stores</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home
+                    <span class="visually-hidden">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="http://gamecycle.ca/">Game Cycle</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://thegamemd.com/">The Game MD</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://www.liquidationcenter.ca/">The Liquidation Center</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <body>
+    
+    <main>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="container col-10">
+          <div class="slider-outer" >
+            <button class="bg-primary prev">Prev</button>
+            <div class="slider-inner "> 
+              <img src="imgs/gameCycle.jpg" alt="gameCycle" id="test" class="active"/>
+              <img src="imgs/gameMD.jpg" alt="gameMD"  />
+              <img src="imgs/liquidationCenter.jpg" alt="Liquidation Center" id="LC"/>
+            </div>
+            <button class="bg-primary next">Next</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="accordion col-10" id="storesAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Game<span id='gameMDSpan'>MD</span><span><img id="gameCycleLogo1" class="logo" src="imgs/gamemdlogo.svg" alt="Game MD Logo"/></span>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#storesAccordion" style="">
+              <div id="gameMD2" class="accordion-body">
+              
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button id="gameCycle" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Game Cycle <span><img class="logo" src="imgs/gamecyclelogo.svg" alt="Game Cycle Logo"/></span>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#storesAccordion" style="">
+              <div id="gameCycle2" class="accordion-body">
+              
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button id="liquidationCenter" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Liquidation Center <span><img class="logo" src="imgs/liquidationlogo.svg" alt="Liquidation Center Logo"/></span>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#storesAccordion" style="">
+              <div id="liquidationCenter2" class="accordion-body">
+            
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      
+
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="card mb-3 col-lg-4">
+          <h3 class="card-header">The Game MD <span><img class="logo" src="imgs/gamemdlogo.svg" alt="Game MD Logo"/></span></h3>
+          <div class="card-body">
+            <h5 class="card-title text-light">The Game MD Website</h5>
+            <h5 class="card-subtitle text-muted">Website Analysis</h5>
+          </div>
+          <div class="card-body">
+            <h5 class="card-subtitle text-light">Desktop View</h5>
+            <p class="card-text"> I like how they implemented a multi-column layout without making the content overwhelming
+              to read. There is no more than 3 columns at a time. 
+            </p>
+            <p class="card-text"> I am not a fan of the small font on the navigation links. These links are very small and 
+              can be difficult to read for some users. I can also live without background-images where
+              I have to scroll to see the content I'm looking for.
+            </p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-subtitle text-light">Mobile View(s)</h5>
+            <p class="card-text">
+              I like the single column layout on this mobile view. Reading the services provided is much easier
+              to follow when viewing on mobile. The navigation is much more accessible on the mobile view
+              than the desktop view.
+            </p>
+            <p class="card-text"> 
+              I don't like the image on the landing screen 
+              as I find it is kind of janky when you visit the site on a tablet. At some resoltions the image
+              is scrollable but the focal point is never visible, making it obtrusive for no reason. 
+            </p>
+          </div>
+          <div class="card-footer text-light">
+            Rating: <span class="text-muted">6.5/10</span>
+          </div>
+        </div>
+      <!-- </div>
+      <div class="row"> -->
+        <div class="col-1"></div>
+        <div class="card mb-3 col-lg-4">
+          <h3 class="card-header">Game Cycle <span><img class="logo" src="imgs/gamecyclelogo.svg" alt="Game Cycle Logo"/></span></h3>
+          <div class="card-body">
+            <h5 class="card-title text-light">Game Cycle Website</h5>
+            <h5 class="card-subtitle text-muted">Website Analysis</h5>
+          </div>
+          <div class="card-body">
+            <h5 class="card-subtitle text-light">Desktop View</h5>
+            <p class="card-text"> I like the simplicity of the design. Keeping to a 3 column maximum throughout the site. There is 
+              a reasonable amount padding around text, and the pictures and text don't take away from each other. 
+            </p>
+            <p class="card-text">I do no like how hard it is to find the navigation links at the top of this page. Having white text 
+              and a transparent background colour makes the navigation difficult to read.
+            </p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-subtitle text-light">Mobile View(s)</h5>
+            <p class="card-text">
+              The only thing I can say I'm a fan of on this mobile view is the navigation is always easily visible,
+                    as opposed to the Desktop view.
+            </p>
+            <p class="card-text"> 
+              The 'Learn More' button is the colour as the its background image, making it very hard to 
+                    spot on the mobile view. The header at the top of the page is also in plain white text while
+                    there is a slideshow of images as its background. I find this very hard to read, and other
+                    users will too. 
+            </p>
+          </div>
+          <div class="card-footer text-light">
+            Rating: <span class="text-muted">7.25/10</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="card mb-3 col-lg-4">
+          <h3 id="behaveLC2" class="card-header">Liquidation Center<span><img id="behaveLC" class="logo" src="imgs/liquidationlogo.svg" alt="Liquidation Center Logo"/></span></h3>
+          <div class="card-body">
+            <h5 class="card-title text-light">Lquidation Center Website</h5>
+            <h5 class="card-subtitle text-muted">Website Analysis</h5>
+          </div>
+          <div class="card-body">
+            <h5 class="card-subtitle text-light">Desktop View</h5>
+            <p class="card-text"> The desktop view has more of an e-commerce feel to it which I really enjoy. It was very easy 
+              to navigate the different types of items, as well as the items added to my cart.
+            </p>
+            <p class="card-text"> I don't like
+              how the navigation switches from the left to the right side depending on what page you are on.
+              The account settings is also very difficult to find, and many desktop viewers may not know it is 
+              there. 
+            </p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-subtitle text-light">Mobile View(s)</h5>
+            <p class="card-text">
+              The mobile view sacrifices some content on the mobile view (e.g. items for sale on the homepage).
+                I like how the account settings is more clearly visible with its own icon in the navigation. 
+            </p>
+            <p class="card-text"> 
+              The
+                hamburger menu is essentially useless on the mobile view as there are no revealed links or anything
+                to guide you. Just a search bar. I think this is better accomplished with the other present search bar
+                that has a select list alongside it. 
+            </p>
+          </div>
+          <div class="card-footer text-light">
+            Rating: <span class="text-muted">8.13/10</span>
+          </div>
+        </div>
+      </div>
+        
+      <div id="toTop1" class="row">
+        <div class="col-9"></div>
+        <button id="toTop" type="button" class="btn btn-primary col-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Tooltip on top">Top</button>
+        <div class="col-1"></div>
+      </div>
+    </main>
+
+    <div class="row">   
+      <div class="container-fluid">
+          <footer class="col-md-12  bg-primary">
+            <a href="https://github.com/paradingwolves/WEB301_Assignments/tree/Assignment3">Assignment 3 Repo</a>
+          </footer>
+        </div>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+  </body>
 
 </html>
 
