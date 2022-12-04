@@ -46,11 +46,9 @@ $(document).ready(function() {
         }   
         xhr.send();
     });
-
-    $("#toTop").click(function () {
-        $("html, body").animate({scrollTop: 0}, 0);
-     });
-   
-    
+    $(document).delegate('button#toTop', 'click', function () {
+        $('html, body').stop().animate({ scrollTop : 0 }, 500);
+        return false;
+    });    
 }); 
 

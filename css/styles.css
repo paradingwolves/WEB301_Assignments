@@ -104,6 +104,14 @@ div[class="card mb-3 col-10"] {
 }
 
 
+#toTop{ 
+    margin-bottom: 2%;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+
+
 footer a {
     text-decoration: none;
     color: black
