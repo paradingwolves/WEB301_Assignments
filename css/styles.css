@@ -6,11 +6,7 @@
 /* 6. Media Queries */
 
 
-@media (max-width: 576px){
-    .prev button, .next button{
-        width: calc(100% * 11/12);
-    }
-}
+
 
 /* 1. Header Styles */
 span>img {
@@ -24,7 +20,10 @@ span>img {
 }
 
 /* 3. Heading Styles */
-
+h2 {
+    text-align: center;
+    margin-top: 2%;
+}
 
 /* 4. Body Styles */
 html {
@@ -80,25 +79,14 @@ html, body{
 #storesAccordion {
     margin-top: 2%;
 }
-div[class="card mb-3 col-10"] {
-    margin-top: 5%;
-} 
+
 .card {
     margin-top: 10%;
-}
-#behaveLC {
-    width : 18%
-}
-#behaveLC2 {
-    font-size: 1.15em; 
 }
 
 
 #toTop{ 
     margin-bottom: 2%;
-}
-.scrollToTop:hover{
-    text-decoration:none;
 }
 
 
@@ -115,17 +103,22 @@ footer {
 
 /* 6. Media Queries */
 
+@media (max-width: 576px){
+    .prev button, .next button{
+        width: calc(100% * 11/12);
+    }
+}
+
 @media only screen and (min-width: 1260px){
-
-    /* 1. Header Styles */
-
-    /* 2. Navgation Styles */
-
-    /* 3. Heading Styles */
-
-    /* 4. Body Styles */
+    h2 {
+        margin: 2% 0 0 2%;
+        text-align: left;
+    }
     #toast1 {
         margin: 5% 0 -4% 49.75%;
+    }
+    .next, .prev {
+        margin: 0 0 0 0;   
     }
     .next, .prev {
         margin: 15 0 0 0;
@@ -135,11 +128,14 @@ footer {
         margin-left: calc(100% * (1/12));
     }
     .next{
+        position: absolute;
         margin-left: calc(100% * (10/12));
-        margin-top: -3%
     }
     .prev button, .next button{
         width: calc(100% * (2/12));
+    }
+    #LCLogo {
+        width: 12.5%;
     }
 
     .slider-inner article {
@@ -153,8 +149,6 @@ footer {
     .card {
         margin-top: 7%
     }
-     /* 5. Footer Styles */
-
      footer {
         clear: both;
      }
