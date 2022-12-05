@@ -75,3 +75,5 @@ Work Log:
 2022-12-04  7:20PM
 -------------------
 - 1 component per website review now 
+- no more AJAX
+- all logos included
