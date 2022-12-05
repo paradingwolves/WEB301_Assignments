@@ -6,23 +6,15 @@
 /* 6. Media Queries */
 
 
-
+@media (max-width: 576px){
+    .prev button, .next button{
+        width: calc(100% * 11/12);
+    }
+}
 
 /* 1. Header Styles */
-span {
-    margin-left: 5%;
-}
-#gameMDSpan {
-    margin: 0 0 0 1%;
-}
-.logo {
-    width: 25%;
-}
-#gameCycleLogo1 {
-    width: 20%;
-}
-#headingOne button {
-    font-size: .62em; 
+span>img {
+    width: 15%
 }
 
 
@@ -43,44 +35,42 @@ html, body{
     padding: 0;
 }
 
+#toast1 {
+    margin: 2% auto;
+}
+#toast2 {
+    position: absolute;
+    float: left;
+}
 .container {
     /* overflow:auto; */
     margin: 0 auto;
 }
 
 .slider-inner {
-   /*  width: 75%; */
-    position: relative;
-    /* overflow: hidden; */
-    float: left;
-    padding: 3px;
-    
+   /*  position: relative; */
+   float: left;
 }
-.slider-inner img {
+
+.slider-inner article {
     display: none;
-    margin: 10% 0 0 2.75%;
-    width: 95%;
+    margin: 1% 0 0 0%;
+    padding: 5px;
+    /* width: 45%; */
     float: left;
 }
-.slider-inner img.active {
+.slider-inner article.active {
     display: inline-block;
-    border: 3px solid black;
 }
 .next, .prev {
-    position: absolute;
-    float: left;
-    margin-top: 35%;
-    
-}
-.prev {
-    /* margin-left: 1.5%; */
-    z-index: 9000;
-    left: 1.5%;
+    float: left; 
+    width: 50%;
+    margin: 3% 0 0 25%;  
 }
 .next {
-    right: 1.5%;
-    z-index: 9000;
+    margin-bottom: 5%;
 }
+
 #accordionstoresAccordion {
     margin-bottom: 2%;
 }
@@ -94,7 +84,7 @@ div[class="card mb-3 col-10"] {
     margin-top: 5%;
 } 
 .card {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 #behaveLC {
     width : 18%
@@ -128,25 +118,40 @@ footer {
 @media only screen and (min-width: 1260px){
 
     /* 1. Header Styles */
-   /*  header, footer {
-        margin-left: 0%
-    } */
+
     /* 2. Navgation Styles */
 
     /* 3. Heading Styles */
 
     /* 4. Body Styles */
+    #toast1 {
+        margin: 5% 0 -4% 49.75%;
+    }
     .next, .prev {
-        margin-top: 10%;
-        
+        margin: 15 0 0 0;
+        margin-top: 10%; 
     }
-    .prev {
-        margin-left: 20%;
-        z-index: 9000;
+    .prev{
+        margin-left: calc(100% * (1/12));
     }
-    .next {
-         margin-right: 20%;
-         z-index: 9000;
+    .next{
+        margin-left: calc(100% * (10/12));
+        margin-top: -3%
+    }
+    .prev button, .next button{
+        width: calc(100% * (2/12));
+    }
+
+    .slider-inner article {
+        margin: -15% 0 0 45%;
+        width: calc(100% * (12/12));
+        float: left;
+    }
+    .slider-inner article h3{
+        margin: 0 auto;
+    }
+    .card {
+        margin-top: 7%
     }
      /* 5. Footer Styles */
 

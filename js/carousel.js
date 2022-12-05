@@ -1,20 +1,20 @@
 $(document).ready(function() {
     $(".next").on('click', function(){
-        var currentImg = $(".active");
-        var nextImg = currentImg.next();
+        var currentSlide = $(".active");
+        var nextSlide = currentSlide.next();
 
-        if (nextImg.length > 0) {
-            currentImg.removeClass('active').css("z-index", "-10");
-            nextImg.addClass('active').css("z-index", "10");
+        if (nextSlide.length > 0) {
+            currentSlide.removeClass('active').css("z-index", "-10");
+            nextSlide.addClass('active').css("z-index", "10");
         }
     });
     $(".prev").on('click', function(){
-        var currentImg = $(".active");
-        var prevImg = currentImg.prev();
+        var currentSlide = $(".active");
+        var prevSlide = currentSlide.prev();
 
-        if (prevImg.length > 0) {
-            currentImg.removeClass('active').css("z-index", "-10");
-            prevImg.addClass('active').css("z-index", "10");
+        if (prevSlide.length > 0) {
+            currentSlide.removeClass('active').css("z-index", "-10");
+            prevSlide.addClass('active').css("z-index", "10");
         }
     });
 });

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#headingOne').on('click', function(){
+   /*  $('#headingOne').on('click', function(){
         var xhr = new XMLHttpRequest;
         xhr.open('GET','gameMD.html',true);
         xhr.onload = function() {
@@ -45,7 +45,7 @@ $(document).ready(function() {
             }
         }   
         xhr.send();
-    });
+    }); */
     $(document).delegate('button#toTop', 'click', function () {
         $('html, body').stop().animate({ scrollTop : 0 }, 500);
         return false;

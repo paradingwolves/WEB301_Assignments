@@ -45,106 +45,142 @@
       </header>
     </div>
     <body>
-    
     <main>
+      <div id="toast1" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">The Liquidation Center</strong>
+          <small>Website Rating</small>
+          <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="toast-body">
+          8.13/10
+        </div>
+      </div>
       <div class="row">
-        <div class="col-1"></div>
-        <div class="container col-10">
-          <div class="slider-outer" >
-            <button class="bg-primary prev">Prev</button>
-            <div class="slider-inner "> 
-              <img src="imgs/gameCycle.jpg" alt="gameCycle" id="test" class="active"/>
-              <img src="imgs/gameMD.jpg" alt="gameMD"  />
-              <img src="imgs/liquidationCenter.jpg" alt="Liquidation Center" id="LC"/>
+        <div class="container">
+          <div class="slider-outer">
+            <!-- <div class="col-lg-1"></div> -->
+            <div class="col-lg-2 prev">
+              <button class="bg-primary">Prev</button>
             </div>
-            <button class="bg-primary next">Next</button>
+            <div class="slider-inner col-lg-6"> 
+              <article id="slide1" class="active">
+                <h3>The Liquidation Center - Overall Analysis</h3>
+                <p>The Liquidation Center implemented adaptive design for 
+                  their website. Their navigation on the left side of the page turns into a hamburger menu,
+                  and the "featured items" are now the only items shown to the user on the homepage when the screens viewport 
+                  is less than 767px wide. The images that are consistent with the desktop and the mobile view 
+                  are replaced with smaller versions of the same image.
+                </p>
+              </article>
+              <article id="slide2">
+                <h3>The Liquidation Center - Desktop View</h3>
+                <p >The desktop view has more of an e-commerce feel to it which I really enjoy. It was very easy 
+                  to navigate the different types of items, as well as the items added to my cart.
+                <br>
+                  I don't like
+                  how the navigation switches from the left to the right side depending on what page you are on.
+                  The account settings is also very difficult to find, and many desktop viewers may not know it is 
+                  there. 
+                </p>
+              </article>
+              <article id="slide3">
+                <h3>The Liquidation Center - Mobile View</h3>
+                <p>The mobile view sacrifices some content on the mobile view (e.g. items for sale on the homepage).
+                  I like how the account settings is more clearly visible with its own icon in the navigation. 
+                <br>
+                The
+                hamburger menu is essentially useless on the mobile view as there are no revealed links or anything
+                to guide you. Just a search bar. I think this is better accomplished with the other present search bar
+                that has a select list alongside it. 
+                </p>
+              </article>
+                
+            </div>
+            <!-- <div class="col-lg-1"></div> -->
+            <div class="col-lg-2 next">
+              <button class="bg-primary">Next</button>
+            </div>
           </div>
         </div>
       </div>
-
-
       <div class="row">
-        <div class="col-1"></div>
-        <div class="accordion col-10" id="storesAccordion">
+        <div class="col-lg-1"></div>
+        <div class="accordion col-lg-4" id="storesAccordion">
+          <h3>Game MD<span><img src="imgs/gamemdlogo.svg" alt="Game MD Logo" /></span></h3>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Game<span id='gameMDSpan'>MD</span><span><img id="gameCycleLogo1" class="logo" src="imgs/gamemdlogo.svg" alt="Game MD Logo"/></span>
+              General Analysis
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#storesAccordion" style="">
-              <div id="gameMD2" class="accordion-body">
-              
+              <div class="accordion-body">
+                <p><strong>The Game MD</strong> implemented a <strong>grid layout</strong> for their website. 
+                  This website uses <strong>responsive</strong> design. There is no content 
+                  that is not visible from one view to another, only the way the content is displayed. The 
+                  background-image used on the landing screen has a max width, and is no longer the background-image
+                  at the 770px breakpoint. This image will have a 100% width at the 441px breakpoint. It is at this same
+                  770px breakpoint that we see the site go from multiple columns to a single column layout. 
+              </p>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-              <button id="gameCycle" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Game Cycle <span><img class="logo" src="imgs/gamecyclelogo.svg" alt="Game Cycle Logo"/></span>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Desktop Analysis
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#storesAccordion" style="">
-              <div id="gameCycle2" class="accordion-body">
-              
+              <div class="accordion-body">
+                  <p>I like how they implemented a multi-column layout without making the content overwhelming
+                    to read. There is no more than 3 columns at a time. </p>
+                  <p> I am not a fan of the small font on the navigation links. These links are very small and 
+                    can be difficult to read for some users. I can also live without background-images where
+                    I have to scroll to see the content I'm looking for.
+                  </p>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button id="liquidationCenter" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Liquidation Center <span><img class="logo" src="imgs/liquidationlogo.svg" alt="Liquidation Center Logo"/></span>
+                Mobile Analysis
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#storesAccordion" style="">
-              <div id="liquidationCenter2" class="accordion-body">
-            
+              <div class="accordion-body">
+                <p>
+                  I like the single column layout on this mobile view. Reading the services provided is much easier
+                  to follow when viewing on mobile. The navigation is much more accessible on the mobile view
+                  than the desktop view.
+                </p>
+                <p> 
+                  I don't like the image on the landing screen 
+                  as I find it is kind of janky when you visit the site on a tablet. At some resoltions the image
+                  is scrollable but the focal point is never visible, making it obtrusive for no reason. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button id="liquidationCenter" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Website Rating
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#storesAccordion" style="">
+              <div class="accordion-body">
+                <p>
+                  6.5/15 
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-1"></div>
-      </div>
-      
-
-
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="card mb-3 col-lg-4">
-          <h3 class="card-header">The Game MD <span><img class="logo" src="imgs/gamemdlogo.svg" alt="Game MD Logo"/></span></h3>
-          <div class="card-body">
-            <h5 class="card-title text-light">The Game MD Website</h5>
-            <h5 class="card-subtitle text-muted">Website Analysis</h5>
-          </div>
-          <div class="card-body">
-            <h5 class="card-subtitle text-light">Desktop View</h5>
-            <p class="card-text"> I like how they implemented a multi-column layout without making the content overwhelming
-              to read. There is no more than 3 columns at a time. 
-            </p>
-            <p class="card-text"> I am not a fan of the small font on the navigation links. These links are very small and 
-              can be difficult to read for some users. I can also live without background-images where
-              I have to scroll to see the content I'm looking for.
-            </p>
-          </div>
-          <div class="card-body">
-            <h5 class="card-subtitle text-light">Mobile View(s)</h5>
-            <p class="card-text">
-              I like the single column layout on this mobile view. Reading the services provided is much easier
-              to follow when viewing on mobile. The navigation is much more accessible on the mobile view
-              than the desktop view.
-            </p>
-            <p class="card-text"> 
-              I don't like the image on the landing screen 
-              as I find it is kind of janky when you visit the site on a tablet. At some resoltions the image
-              is scrollable but the focal point is never visible, making it obtrusive for no reason. 
-            </p>
-          </div>
-          <div class="card-footer text-light">
-            Rating: <span class="text-muted">6.5/10</span>
-          </div>
-        </div>
-      <!-- </div>
-      <div class="row"> -->
         <div class="col-1"></div>
         <div class="card mb-3 col-lg-4">
           <h3 class="card-header">Game Cycle <span><img class="logo" src="imgs/gamecyclelogo.svg" alt="Game Cycle Logo"/></span></h3>
@@ -174,49 +210,7 @@
                     users will too. 
             </p>
           </div>
-          <div class="card-footer text-light">
-            Rating: <span class="text-muted">7.25/10</span>
-          </div>
         </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-lg-4"></div>
-        <div class="card mb-3 col-lg-4">
-          <h3 id="behaveLC2" class="card-header">Liquidation Center<span><img id="behaveLC" class="logo" src="imgs/liquidationlogo.svg" alt="Liquidation Center Logo"/></span></h3>
-          <div class="card-body">
-            <h5 class="card-title text-light">Lquidation Center Website</h5>
-            <h5 class="card-subtitle text-muted">Website Analysis</h5>
-          </div>
-          <div class="card-body">
-            <h5 class="card-subtitle text-light">Desktop View</h5>
-            <p class="card-text"> The desktop view has more of an e-commerce feel to it which I really enjoy. It was very easy 
-              to navigate the different types of items, as well as the items added to my cart.
-            </p>
-            <p class="card-text"> I don't like
-              how the navigation switches from the left to the right side depending on what page you are on.
-              The account settings is also very difficult to find, and many desktop viewers may not know it is 
-              there. 
-            </p>
-          </div>
-          <div class="card-body">
-            <h5 class="card-subtitle text-light">Mobile View(s)</h5>
-            <p class="card-text">
-              The mobile view sacrifices some content on the mobile view (e.g. items for sale on the homepage).
-                I like how the account settings is more clearly visible with its own icon in the navigation. 
-            </p>
-            <p class="card-text"> 
-              The
-                hamburger menu is essentially useless on the mobile view as there are no revealed links or anything
-                to guide you. Just a search bar. I think this is better accomplished with the other present search bar
-                that has a select list alongside it. 
-            </p>
-          </div>
-          <div class="card-footer text-light">
-            Rating: <span class="text-muted">8.13/10</span>
-          </div>
-        </div>
-      </div>
         
       <div id="toTop1" class="row">
         <div class="col-9"></div>
@@ -232,7 +226,7 @@
           </footer>
         </div>
      </div>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>

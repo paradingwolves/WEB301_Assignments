@@ -15,9 +15,9 @@ Image References:
        Why I chose each component
 --------------------------------------------
 
-carousel explanation: I implemented a carousel mainly to see if I could figure it out. It is also a cool idea to have a rotating set of images. I placed this at the top of the page so users would know what stores i am talking about
+buttons: I chose to use buttons rather than links to navigate through my website because buttons are easier to style, and they have a clean style that does not take attention away from other conent.
 
-cards explanation: Cards were a relatively easy decision. They provide a nice and neat way of displaying content on mobile and desktop views. 
+toast: I used a toast message to display the rating for the Liquidation Center. I thought this would look neat on the top of the website when the user lands on the home screen, as well as display some meaningful content in one less click.
 
 
 --------------------------------------------
@@ -70,3 +70,8 @@ Work Log:
 - fixed horizontal scroll issue
 - fixed my col- classes to properly use bootstrap grid, was doing backwards before
 - back to top button now in jquery
+
+-------------------
+2022-12-04  7:20PM
+-------------------
+- 1 component per website review now 
