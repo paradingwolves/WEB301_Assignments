@@ -16,9 +16,12 @@
         // https://getbootstrap.com/docs/5.2/components/modal/#via-javascript
         // Given the code found there, first create your new instance of a Modal, by selecting your pages HTML modal (you don't need to pass in options)
         
-
+        console.log("valid");
         // then open it by using the show() method
 
+      }
+      else {
+        console.log("nah");
       }
 
       

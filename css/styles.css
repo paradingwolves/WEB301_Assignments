@@ -1,4 +1,56 @@
+/* 1. Header Styles */
+/* 2. Navgation Styles */
+/* 3. Heading Styles */
+/* 4. Body Styles */
+/* 5. Footer Styles */
+/* 6. Media Queries */
+
+
+
+/* 1. Header Styles */
+
+
+
+/* 2. Navgation Styles */
+
+
+
+/* 3. Heading Styles */
+
+
+
+/* 4. Body Styles */
 html, body{
     margin: 0;
     padding: 0;
+}
+html {
+    overflow-x: hidden;
+}
+
+form {
+    margin: 0 0 5% 1%;
+}
+
+
+.industries {
+    margin: 0 0 0 25%;
+}
+button {
+    margin-left: 75%;
+}
+
+/* 5. Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px
+}
+
+
+/* 6. Media Queries */
+
+@media screen and (min-width: 1260px) {
+    form {
+        margin: 0 0 5% 0
+    }
 }

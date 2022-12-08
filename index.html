@@ -39,98 +39,97 @@
   <main>
     <div class="row">
       <div class="col-md-4"></div>
-      <form class="col-md-4">
+      <form class="col-md-4 needs-validation" novalidate>
+        <legend>Bootstrap Form</legend>
         <fieldset>
-          <legend>Bootstrap Form</legend>
           <div class="form-group">
             <label for="fullName" class="form-label mt-4">Full Name</label>
-            <input type="text" class="form-control mt-4" id="fullName" aria-describedby="enterFullName" placeholder="John Doe">
+            <input type="text" class="form-control mt-4" id="fullName" aria-describedby="enterFullName" placeholder="John Doe" required>
           </div>
           <div class="form-group">
             <label for="email1" class="form-label mt-4">Email address</label>
-            <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email" required>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
             <label for="businessName" class="form-label mt-4">Business Name</label>
-            <input type="text" class="form-control" id="businessName" aria-describedby="enterBusinessName" placeholder="Enron">
+            <input type="text" class="form-control" id="businessName" aria-describedby="enterBusinessName" placeholder="Enron" required>
           </div>
-          <fieldset class="form-group nav-item dropdown">
-            <label for="province" class="form-label mt-4">Select Province</label>
-            <select class="form-control dropdown-toggle" data-bs-toggle="dropdown" href="#" id="province" role="button" aria-haspopup="true" aria-expanded="false">
-            <div class="dropdown-menu">
-              <option class="dropdown-item" disabled>Select Province</option>
-              <option class="dropdown-item">Alberta</option>
-              <option class="dropdown-item">British Colombia</option>
-              <option class="dropdown-item">Manitoba</option>
-              <option class="dropdown-item">New Brunswick</option>
-              <option class="dropdown-item">Newfoundland and Labrador</option>
-              <option class="dropdown-item">Northwest Territories</option>
-              <option class="dropdown-item">Nova Scotia</option>
-              <option class="dropdown-item">Nunavut</option>
-              <option class="dropdown-item">Ontario</option>
-              <option class="dropdown-item">Prince Edward Island</option>
-              <option class="dropdown-item">Quebec</option>
-              <option class="dropdown-item">Saskatchewan</option>
-              <option class="dropdown-item">Yukon</option>
-            </div>
-            </select>
-          </fieldset>
-          
-          <fieldset class="form-group">
-            <legend class="mt-4">Is Your Company for Profit?</legend>
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-              <label class="form-check-label" for="optionsRadios1">
-                For-Profit
-              </label>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-              <label class="form-check-label" for="optionsRadios1">
-                Non-Profit
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form-group">
-            <legend class="mt-4">Service Industries</legend>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Land Development Industry
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-              <label class="form-check-label" for="flexCheckChecked">
-                Knowledge Industry
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-              <label class="form-check-label" for="flexCheckChecked">
-                 Mass Surveillance Industry
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-              <label class="form-check-label" for="flexCheckChecked">
-                 Tourism Industry
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-              <label class="form-check-label" for="flexCheckChecked">
-                Cleaning Industry
-              </label>
-            </div>
-          </fieldset>
-         
-          <button type="submit" class="btn btn-primary">Submit</button>
         </fieldset>
+        <fieldset class="form-group nav-item dropdown">
+          <label for="province" class="form-label mt-4">Select Province</label>
+          <select class="form-control dropdown-toggle" data-bs-toggle="dropdown" href="#" id="province" role="button" aria-haspopup="true" aria-expanded="false" required>
+          <div class="dropdown-menu">
+            <option class="dropdown-item" disabled>Select Province</option>
+            <option value="Alberta" class="dropdown-item">Alberta</option>
+            <option value="British Colombia" class="dropdown-item">British Colombia</option>
+            <option value="Manitoba" class="dropdown-item">Manitoba</option>
+            <option value="New Brunswick" class="dropdown-item">New Brunswick</option>
+            <option value="Newfoundland and Labrador" class="dropdown-item">Newfoundland and Labrador</option>
+            <option value="Northwest Territories" class="dropdown-item">Northwest Territories</option>
+            <option value="Nova Scotia" class="dropdown-item">Nova Scotia</option>
+            <option value="Nunavut" class="dropdown-item">Nunavut</option>
+            <option value="Ontario" class="dropdown-item">Ontario</option>
+            <option value="Prince Edward Island" class="dropdown-item">Prince Edward Island</option>
+            <option value="Quebec" class="dropdown-item">Quebec</option>
+            <option value="Saskatchewan" class="dropdown-item">Saskatchewan</option>
+            <option value="Yukon" class="dropdown-item">Yukon</option>
+          </div>
+          </select>
+        </fieldset>
+        
+        <fieldset class="form-group">
+          <legend class="mt-4">Is Your Company for Profit?</legend>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="For-Profit" checked="">
+            <label class="form-check-label" for="optionsRadios1">
+              For-Profit
+            </label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="Non-Profit">
+            <label class="form-check-label" for="optionsRadios1">
+              Non-Profit
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form-group industries">
+          <legend class="mt-4">Service Industries</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Land Development Industry" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Land Development Industry
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Knowledge Industry" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Knowledge Industry
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Mass Surveillance Industry" id="flexCheckChecked2">
+            <label class="form-check-label" for="flexCheckChecked2">
+                Mass Surveillance Industry
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Tourism Industry" id="flexCheckChecked3">
+            <label class="form-check-label" for="flexCheckChecked3">
+                Tourism Industry
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Cleaning Industry" id="flexCheckChecked4">
+            <label class="form-check-label" for="flexCheckChecked4">
+              Cleaning Industry
+            </label>
+          </div>
+        </fieldset>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
       </form>
+      <div class="col-md-4"></div>
     </div>
-    
   </main>
   <div class="row">   
     <div class="container-fluid">
