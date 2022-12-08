@@ -7,7 +7,7 @@
   <meta name="description" content="YOURDESCRIPTIONHERE">
   <meta name="author" content="YOURNAMEHERE" />
   <title>Bootstrap Forms</title>
-  <link rel="stylesheet" href="css/bootstrap(1).css" />
+  <link rel="stylesheet" href="css/bootstrap(1).css" /> <!-- bootswatch theme: sketchy -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -37,9 +37,13 @@
     </nav>
   </header>
   <main>
+    <!-- Container to add margin -->
     <div class="container-md">
+      <!-- start of row -->
       <div class="row">
+        <!-- Margin for desktop -->
         <div class="col-md-4"></div>
+        <!-- form -->
         <form class="col-md-4 needs-validation" novalidate>
           <legend>Bootstrap Form</legend>
           <fieldset>
@@ -57,9 +61,10 @@
               <input type="text" class="form-control" id="businessName" aria-describedby="enterBusinessName" placeholder="Enron" required>
             </div>
           </fieldset>
+          <!--  Add dropdown class -->
           <fieldset class="form-group nav-item dropdown">
             <label for="province" class="form-label mt-4">Select Province</label>
-            <select class="form-control dropdown-toggle" data-bs-toggle="dropdown" href="#" id="province" role="button" aria-haspopup="true" aria-expanded="false" required>
+            <select class="form-control dropdown-toggle" data-bs-toggle="dropdown" id="province"  aria-haspopup="true" aria-expanded="false" required>
             <div class="dropdown-menu">
               <option class="dropdown-item" disabled>Select Province</option>
               <option value="Alberta" class="dropdown-item">Alberta</option>
@@ -78,7 +83,7 @@
             </div>
             </select>
           </fieldset>
-          
+          <!-- Switches -->
           <fieldset class="form-group">
             <legend class="mt-4">Is Your Company for Profit?</legend>
             <div class="form-check form-switch">
@@ -128,11 +133,35 @@
             </div>
           </fieldset>
           <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+          <div style="margin-top:3%;" class="alert alert-dismissible alert-danger">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+          </div>
         </form>
         <div class="col-md-4"></div>
       </div>
     </div>
-    
+    <!-- The Modal -->
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div id="myModal" class="modal col-md-4">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Congratulations!</h2>
+          </div>
+          <div class="modal-body">
+            <p>You submitted the form successfully!</p>
+            <p>Have a nice day, ya filthy animal...</p>
+          </div>
+          <div class="modal-footer">
+            <h3>Now go back to your hole</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>    
   </main>
   <div class="row">   
     <div class="container-fluid">
